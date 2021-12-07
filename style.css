@@ -1,0 +1,10 @@
+html, body {
+    height: 100%;
+    font-family: 'Space Mono', monospace;
+    text-transform: capitalize;
+}
+
+header {    
+    background-color: #c5e4e7;
+    padding: 50px 0;
+}
