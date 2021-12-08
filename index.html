@@ -24,51 +24,77 @@
     <body>
 
         <header>
-            <img src="images/logo.svg" class="logo">
+            <img src="images/logo.svg" id="logo">
         </header>
 
         <div class="container" id="content">
-            <div class="row">
-                <div class="form-group">
-                    <label for="finalBill">
-                        Bill
-                    </label>
-                    <input class="form-control" type="text" id="finalBill" placeholder="0">
+            <div class="row">                
+                <label class="form-label" for="finalBill">
+                    Bill
+                </label>
+                <div class="input-group input-group-lg inputStyle">
+                    <input class="form-control shadow-none" type="text" id="finalBill" placeholder="0">
+                    <img src="images/icon-dollar.svg">
                 </div>
 
-                <div class="form-group">
-                    <label for="percentageTip">
-                        Select Tip %
-                    </label>
-                    <div class="container">
-                        <div class="row">                
+                <label for="percentageTip">
+                    Select Tip %
+                </label>
+                <div class="input-group" id="percentageOptions">
+                    
+                    
+                        <div class="row justify-content-evenly">                
                             <input type="radio" class="btn-check" name="tips" id="tip1" autocomplete="off">
-                            <label class="btn btn-primary col-6" for="tip1">5%</label>
+                            <label class="btn btn-primary col-5 shadow-none" for="tip1">5%</label>
 
                             <input type="radio" class="btn-check" name="tips" id="tip2" autocomplete="off">
-                            <label class="btn btn-primary col-6" for="tip2">10%</label>
+                            <label class="btn btn-primary col-5 shadow-none" for="tip2">10%</label>
 
                             <input type="radio" class="btn-check" name="tips" id="tip3" autocomplete="off">
-                            <label class="btn btn-primary col-6" for="tip3">15%</label>
+                            <label class="btn btn-primary col-5 shadow-none" for="tip3">15%</label>
 
                             <input type="radio" class="btn-check" name="tips" id="tip4" autocomplete="off">
-                            <label class="btn btn-primary col-6" for="tip4">25%</label>
+                            <label class="btn btn-primary col-5 shadow-none" for="tip4">25%</label>
 
                             <input type="radio" class="btn-check" name="tips" id="tip5" autocomplete="off">
-                            <label class="btn btn-primary col-6" for="tip5">50%</label>
+                            <label class="btn btn-primary col-5 shadow-none" for="tip5">50%</label>
 
                             <input type="radio" class="btn-check" name="tips" id="tip6" autocomplete="off">
-                            <label class="btn btn-primary col-6" for="tip6">Custom</label>
+                            <label class="btn btn-primary col-5 shadow-none" for="tip6">Custom</label>
                         </div>
-                    </div>
+                    
                 </div>
 
-                <div class="form-group">
-                    <label for="numberOfPeople">
-                        Number of people
-                    </label>
-                    <input class="form-group col-12" type="text" id="numberOfPeople" placeholder="0">
+                <label for="numberOfPeople">
+                    Number of people
+                </label>
+                <div class="input-group input-group-lg inputStyle">                    
+                    <input class="form-control col-12 shadow-none" type="text" id="numberOfPeople" placeholder="0">
+                    <img src="images/icon-person.svg">
                 </div>
+
+                <div class="container">
+                    <div class="row justify-content-between" id="darkBox">
+                        <div class="col-6">
+                            <h6>Tip amount</h6>
+                            <p>/ person</p>
+                        </div>
+                        <div class="col-6">
+                            <p>$0,00</p>
+                        </div>
+                        <div class="col-6">
+                            <h6>Total</h6>
+                            <p>/ person</p>
+                        </div>
+                        <div class="col-6">
+                            <p>$0,00</p>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+
             </div>
         </div>
 

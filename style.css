@@ -1,15 +1,89 @@
-html, body {
+html, body {    
+    background-color: #c5e4e7;
     height: 100%;
     font-family: 'Space Mono', monospace;
     text-transform: capitalize;
 }
 
-header {    
-    background-color: #c5e4e7;
-    padding: 50px 0;
+header {
+    padding: 30px 0;
 }
 
-.logo {
+label {
+    font-weight: 700;
+    color: #00494d;
+    margin: 0 10px;
+}
+
+#logo {
     display: block;
     margin: auto;
+}
+
+#content {
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.inputStyle {
+    position: relative;
+}
+
+.inputStyle input {
+    border: 0.5px solid #e3e9e9;
+    display: block;
+    text-align: right;
+    background-color: #f4fafa;
+    margin: 0 10px;
+}
+
+.inputStyle img {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+}
+/* webkit solution */
+::-webkit-input-placeholder { 
+    text-align: right; 
+}
+/* mozilla solution */
+input:-moz-placeholder { 
+    text-align: right; 
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+#percentageOptions, #numberOfPeople {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.input-group .btn {
+    margin: 5px 0;
+}
+
+.btn-primary {
+    border: none;
+    background-color:#00494d;
+    transition: none;
+}
+
+.btn:focus {
+    border: none;
+}
+
+.btn-check:checked+.btn-primary {
+    border: none;
+    color: #00494d;
+    background-color: hsl(172, 67%, 45%);
+}
+
+#darkBox {
+    background: #00494d;
+    padding: 25px 15px;
+    border-radius: 30px;
+    margin: 5px 10px;
 }
